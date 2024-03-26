@@ -9,7 +9,11 @@ general = '''**Protect your skin from the sun:**\n This is the most important th
     \n\n**Avoid tanning beds:**\n Tanning beds emit ultraviolet (UV) rays, which can damage your skin and increase your risk of melanoma.
     \n\n**Get regular skin exams:**\n A dermatologist can check your skin for signs of melanoma.\n
     \n**Cover up:**\n Wear protective clothing, such as hats and sunglasses, when you're outdoors.
-    \n\n**Seek Professional help:**\n Do a monthly skin self-exam to check for any new or changing moles."'''
+    \n\n**Seek Professional help:**\n Do a monthly skin self-exam to check for any new or changing moles.
+    \n\n**Resist the urge to scrub your skin clean:**\n If you've been sweating heavily or have a serious acne flare, it may seem natural to scrub your skin. Don't! Scrubbing irritates your skin, which can worsen any skin condition, including acne.
+    \n\n**Stress less:**\n Finding healthy ways to manage stress can help your skin, too. Some skin diseases like psoriasis and atopic dermatitis (eczema) often appear for the first time when someone feels really stressed. Stress can also cause flare-ups of many skin conditions, including acne, eczema, psoriasis, and rosacea.
+    \n\n**Don't smoke:**\n Smoking speeds up how quickly your skin ages. If you smoke, your wounds will also take longer to heal. And research shows that smoking worsens some skin diseases, including psoriasis and hidradenitis suppurativa.
+    '''
 
 warning = '''It is important to emphasize that this is a warning and not a confirmed diagnosis. \n
 Advise the user to see a doctor as soon as possible.\n
@@ -36,7 +40,7 @@ if img is not None:
 
     if prediction == "Malignant Melanoma":
         st.divider()
-        st.subheader("Line of Action :")
+        st.subheader("Keep in Mind :")
     st.write(note)
 
 st.divider()
@@ -45,4 +49,5 @@ st.markdown(general)
 
 if img is not None:
     st.divider()
+    st.caption("This model is for informational purposes only and should not be used as a substitute for professional medical advice.")
     st.caption(warning)

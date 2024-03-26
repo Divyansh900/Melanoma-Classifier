@@ -11,11 +11,16 @@ benign2 = '''In most cases, benign skin patches do not require treatment. Howeve
 
 malignant = '''**Warning: Potential Melanoma Detected**\n\n
 
-This image analysis suggests the possibility of melanoma. Melanoma is a serious form of skin cancer, and early detection is crucial.  Please see a doctor immediately for a professional diagnosis.  Do not rely solely on this model's output.\n\n'''
+This image analysis suggests the possibility of melanoma. Melanoma is a serious form of skin cancer, and early detection is crucial.  \n\nPlease see a doctor immediately for a professional diagnosis if you multiple scans suggest Malignant Melanoma.\n\n'''
 
 malignant2 = '''Try taking several images of the same lesion from different angles and under good lighting. This can help improve the accuracy of the model.\n
-This model is for informational purposes only and should not be used as a substitute for professional medical advice.\n
-If you continue to receive a melanoma warning after trying different images, a visit to the doctor is strongly recommended.\n\n
+If you continue to receive a melanoma warning after trying different images, a visit to the doctor is strongly recommended.\n
+Additional symptoms like Asymmetry, blurred border, uneven colouration, change in shape of the patch makes it important that you approach a medical professional.\n
+If you have any concerns about a mole or lesion, it is important to see a dermatologist for a skin exam. Early diagnosis and treatment of melanoma is essential for improving the chances of a cure.\n
+Melanoma can occur anywhere on the body, but has a higher chance on fave, arms and legs.\n
+Anyone can get melanoma, but people with fair skin, a history of sunburn, and a family history of melanoma are at higher risk.\n
+The best way to prevent melanoma is to protect your skin from the sun. This includes wearing sunscreen with an SPF of 30 or higher, seeking shade during peak sun hours (10 am to 4 pm), and wearing protective clothing, such as hats and sunglasses.\n
+Keep in mind that this is not a diagnosis, but we highly recommend that you seek professional help for a skin examination\n
 '''
 
 class CNN:
